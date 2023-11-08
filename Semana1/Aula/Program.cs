@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿#region tipos de dados
+
+int tipoInteiro;
+double tipoDouble;
+bool tipoBool;
+string tipoTexto;
+
+tipoInteiro = int.MaxValue;
+System.Console.WriteLine(tipoInteiro);
+
+#endregion
