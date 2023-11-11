@@ -7,3 +7,5 @@ Para verificar as versões do sdk instaladas pode ser usado o comando "dotnet --
 Para atualizar o .net pode ser utilizado o comando admin para linux "sudo apt upgrade dotnet-sdk" ou ainda o comando "./dotnet-install.sh --version latest".
 
 Já para a remoção, pode ser utilizado o comando "sudo apt-get remove dotnet-sdk-versão_a_ser_removida".
+
+Note que após a instalação, é necessário definir as variáveis de ambiente. Os comandos "export DOTNET_ROOT=$HOME/.dotnet" e "export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools" devem ser utilizados, e são encontrados nas páginas de tutorial da Microsoft.
