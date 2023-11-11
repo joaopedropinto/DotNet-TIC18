@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana1/Aula/Aula.csproj": {}
+    "/root/residencia/DotNet-TIC18/Semana1/Aula/Aula.csproj": {}
   },
   "projects": {
-    "/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana1/Aula/Aula.csproj": {
+    "/root/residencia/DotNet-TIC18/Semana1/Aula/Aula.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana1/Aula/Aula.csproj",
+        "projectUniqueName": "/root/residencia/DotNet-TIC18/Semana1/Aula/Aula.csproj",
         "projectName": "Aula",
-        "projectPath": "/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana1/Aula/Aula.csproj",
-        "packagesPath": "/home/joao-pedro-pinto/.nuget/packages/",
-        "outputPath": "/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana1/Aula/obj/",
+        "projectPath": "/root/residencia/DotNet-TIC18/Semana1/Aula/Aula.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/root/residencia/DotNet-TIC18/Semana1/Aula/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/joao-pedro-pinto/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
         }
       }
     }
