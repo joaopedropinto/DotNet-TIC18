@@ -1,0 +1,14 @@
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/bin/Debug/net7.0/Questoes_praticas
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/bin/Debug/net7.0/Questoes_praticas.deps.json
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/bin/Debug/net7.0/Questoes_praticas.runtimeconfig.json
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/bin/Debug/net7.0/Questoes_praticas.dll
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/bin/Debug/net7.0/Questoes_praticas.pdb
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/obj/Debug/net7.0/Questoes_praticas.GeneratedMSBuildEditorConfig.editorconfig
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/obj/Debug/net7.0/Questoes_praticas.AssemblyInfoInputs.cache
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/obj/Debug/net7.0/Questoes_praticas.AssemblyInfo.cs
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/obj/Debug/net7.0/Questoes_praticas.csproj.CoreCompileInputs.cache
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/obj/Debug/net7.0/Questoes_praticas.dll
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/obj/Debug/net7.0/refint/Questoes_praticas.dll
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/obj/Debug/net7.0/Questoes_praticas.pdb
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/obj/Debug/net7.0/Questoes_praticas.genruntimeconfig.cache
+/root/residencia/DotNet-TIC18/Semana1/Atividade1/Questoes_praticas/obj/Debug/net7.0/ref/Questoes_praticas.dll
