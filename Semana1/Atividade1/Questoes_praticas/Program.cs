@@ -1,6 +1,15 @@
-﻿Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Atividade pratica 1");
 #region Questao 3
 Console.WriteLine("\nQuestao 3");
+
+double valDouble = 3.7;
+int valInt = (int)valDouble;
+
+Console.WriteLine("Valor Double: " + valDouble);
+Console.WriteLine("Valor Inteiro: " + valInt);
+
+// Utilizando a conversão direta de double para int causa a perda da parte fracionária do double, que não
+// pode ser representado pelo int. 
 #endregion
 
 #region Questao 4
