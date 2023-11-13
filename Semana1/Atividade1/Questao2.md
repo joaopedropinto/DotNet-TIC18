@@ -1,0 +1,5 @@
+#Questao 2
+
+Os tipos numéricos inteiros em C# são: sbyte, byte, short, ushort, int, uint, long, ulong.
+
+Eles podem ser utilizados para trabalhar com diferentes faixas de valores. O sbyte e byte possuem apenas 8 bits, e são úteis para armazenamento de valores pequenos em um intervalo restrito, aumentando a otimização do uso da memória. Já o short e ushort possuem 16 bits, podem armazenar valores maiores do que o tipo byte, mas ainda restrito em um determinado intervalo. O tipo int e uint possuem 32 bits e são utilizados mais comumente, sendo empregados para armazenar valores gerais como contadores ou valores numéricos mais significativos. Por fim, o tipo long e ulong, que possuem 64 bits, e se fazem necessários para operações que necessitam de valores inteiros elevados, como grandes contadores ou sistemas de data e hora. 
