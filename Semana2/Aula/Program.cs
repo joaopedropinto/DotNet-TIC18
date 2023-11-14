@@ -45,3 +45,12 @@ Console.WriteLine("\nExercise 3\n");
 
 #endregion
 
+#region Example Strings
+Console.WriteLine("Example Strings");
+Console.WriteLine("Please enter your name: ");
+string? name1 = Console.ReadLine();
+Console.WriteLine($"Hello, {name1.ToUpper()}");
+Console.WriteLine($"Hello, {name1.ToLower()}");
+Console.WriteLine($"Length of name: {name1.Length}");
+
+#endregion
