@@ -1,0 +1,15 @@
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/bin/Debug/net7.0/Aula
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/bin/Debug/net7.0/Aula.deps.json
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/bin/Debug/net7.0/Aula.runtimeconfig.json
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/bin/Debug/net7.0/Aula.dll
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/bin/Debug/net7.0/Aula.pdb
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/obj/Debug/net7.0/Aula.csproj.AssemblyReference.cache
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/obj/Debug/net7.0/Aula.GeneratedMSBuildEditorConfig.editorconfig
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/obj/Debug/net7.0/Aula.AssemblyInfoInputs.cache
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/obj/Debug/net7.0/Aula.AssemblyInfo.cs
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/obj/Debug/net7.0/Aula.csproj.CoreCompileInputs.cache
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/obj/Debug/net7.0/Aula.dll
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/obj/Debug/net7.0/refint/Aula.dll
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/obj/Debug/net7.0/Aula.pdb
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/obj/Debug/net7.0/Aula.genruntimeconfig.cache
+/home/joao-pedro-pinto/Residencia/DotNet-TIC18/Semana2/Aula/obj/Debug/net7.0/ref/Aula.dll
