@@ -1,4 +1,6 @@
-﻿#region Foreach example
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
+#region Foreach example
 Console.WriteLine("Foreach example");
 string[] colecao= { "Item1", "Item2", "Item3", "Item4" };
 
