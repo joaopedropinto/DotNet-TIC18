@@ -1,0 +1,14 @@
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/bin/Debug/net7.0/Atividade2
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/bin/Debug/net7.0/Atividade2.deps.json
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/bin/Debug/net7.0/Atividade2.runtimeconfig.json
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/bin/Debug/net7.0/Atividade2.dll
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/bin/Debug/net7.0/Atividade2.pdb
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/obj/Debug/net7.0/Atividade2.GeneratedMSBuildEditorConfig.editorconfig
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/obj/Debug/net7.0/Atividade2.AssemblyInfoInputs.cache
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/obj/Debug/net7.0/Atividade2.AssemblyInfo.cs
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/obj/Debug/net7.0/Atividade2.csproj.CoreCompileInputs.cache
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/obj/Debug/net7.0/Atividade2.dll
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/obj/Debug/net7.0/refint/Atividade2.dll
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/obj/Debug/net7.0/Atividade2.pdb
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/obj/Debug/net7.0/Atividade2.genruntimeconfig.cache
+/root/residencia/DotNet-TIC18/Semana2/Atividade2/obj/Debug/net7.0/ref/Atividade2.dll
