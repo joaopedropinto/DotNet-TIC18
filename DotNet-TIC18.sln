@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Semana1", "Semana1", "{004A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula", "Semana1\Aula\Aula.csproj", "{67867658-524E-48E6-9B38-4429AB8A8052}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Semana2", "Semana2", "{FB981041-A991-4780-B9CC-FB25BA3019F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Atividade2", "Atividade2", "{2C063280-CB15-40DB-A380-93ED604D7581}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{67867658-524E-48E6-9B38-4429AB8A8052} = {004A3F90-37CE-4D73-809E-DDFC2B234A42}
+		{2C063280-CB15-40DB-A380-93ED604D7581} = {FB981041-A991-4780-B9CC-FB25BA3019F8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {88F10B89-5337-40E1-8309-7B5A6129AC6A}
