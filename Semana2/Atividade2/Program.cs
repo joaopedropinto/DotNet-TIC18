@@ -1,80 +1,91 @@
-﻿
+﻿using System.Globalization;
+CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("pt-BR");
+
 List<string> titles = new List<string>();
 List<string> descriptions = new List<string>();
 List<DateTime> dueDates = new List<DateTime>();
+List<DateTime> createdDates = new List<DateTime>();
 List<bool> completedTasks = new List<bool>();
 
 while (true)
 {
-
   Console.WriteLine($"\n===== Tasks management system =====\n");
-  Console.WriteLine($"1. Create Task");
-  Console.WriteLine($"2. List Tasks");
-  Console.WriteLine($"3. Mark Task as Completed");
-  Console.WriteLine($"4. List Pending Tasks");
-  Console.WriteLine($"5. List Completed Tasks");
-  Console.WriteLine($"6. Delete Task");
-  Console.WriteLine($"7. Search Task by Keyword");
-  Console.WriteLine($"8. Display Statistics");
-  Console.WriteLine($"0. Exit");
+  Console.WriteLine($"1 - Create Task");
+  Console.WriteLine($"2 - List Tasks");
+  Console.WriteLine($"3 - Mark Task as Completed");
+  Console.WriteLine($"4 - List Pending Tasks");
+  Console.WriteLine($"5 - List Completed Tasks");
+  Console.WriteLine($"6 - Delete Task");
+  Console.WriteLine($"7 - Search Task by Keyword");
+  Console.WriteLine($"8 - Display Statistics");
+  Console.WriteLine($"0 - Exit");
 
   Console.Write("Choose an option: ");
 
   int opcao = int.Parse(Console.ReadLine());
-
+  int completedTasksCount = 0;
+  int pendingTasksCount = 0;
+  int taskNumber;
   switch (opcao)
   {
+    //Create Task
     case 1:
-      string title, description;
-      DateTime dueDate;
+      string? titleInput, descriptionInput;
+      DateTime dueDateInput, createdDateInput;
 
       Console.WriteLine($"Enter the task title:");
-      title = Console.ReadLine();
-      titles.add(title);
+      titleInput = Console.ReadLine();
+      titles.Add(titleInput);
 
       Console.WriteLine($"Enter the task description:");
-      description = Console.ReadLine();
-      descriptions.add(description);
+      descriptionInput = Console.ReadLine();
+      descriptions.Add(descriptionInput);
 
-      Console.WriteLine($"Enter the task due date (dd/MM/yyyy):");
-      dueDate = DateTime.Parse(Console.ReadLine(), "dd/MM/yyyy", null);
-      dueDates.add(dueDate);
+      Console.WriteLine($"Enter the task due date (dd/mm/yyyy):");
+      dueDateInput = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null);
+      dueDates.Add(dueDateInput);
 
-      completedTasks.add(false);
+      createdDateInput = DateTime.Now;
+      createdDates.Add(createdDateInput);
+      completedTasks.Add(false);
 
       Console.WriteLine($"Task created successfully!");
       break;
+
+    //List tasks
     case 2:
-      if (tasks.Count <= 0)
+      if (titles.Count <= 0)
       {
         Console.WriteLine($"No tasks found!");
       }
       else
       {
-        Console.WriteLine($"=======Task list=======");
-        for (int i = 0; i < tasks.Count; i++)
+        Console.WriteLine($"\n=======Task list=======");
+        for (int i = 0; i < titles.Count; i++)
         {
-          Console.WriteLine($"{i}. {tasks[i]} - Description: {descriptions[i]} - Due date: {dueDates[i]} - {(completedTasks[i] ? "[x]" : "[ ]")}");
+          Console.WriteLine($"{i}. {titles[i]} - Description: {descriptions[i]} - Created at: {createdDates[i]} -  Due date: {dueDates[i]:dd/MM/yyyy} - {(completedTasks[i] ? "[x]" : "[ ]")}");
         }
       }
       break;
+
+    //Mark as completed
     case 3:
-      if (tasks.Count <= 0)
+      if (titles.Count <= 0)
       {
         Console.WriteLine($"No tasks found!");
       }
       else
       {
-        Console.WriteLine($"=======Task list=======");
-        for (int i = 0; i < tasks.Count; i++)
+        Console.WriteLine($"\n=======Task list=======");
+        for (int i = 0; i < titles.Count; i++)
         {
-          Console.WriteLine($"{i}. {tasks[i]} - Description: {descriptions[i]} - Due date: {dueDates[i]} - {(completedTasks[i] ? "[x]" : "[ ]")}");
+          Console.WriteLine($"{i}. {titles[i]} - Description: {descriptions[i]} - Created at: {createdDates[i]} - Due date: {dueDates[i]:dd/MM/yyyy} - {(completedTasks[i] ? "[x]" : "[ ]")}");
         }
       }
-      Console.Write("Enter the task number you want to mark as completed: ");
-      int taskNumber = int.Parse(Console.ReadLine());
+      Console.Write("\nEnter the task number you want to mark as completed: ");
+      taskNumber = int.Parse(Console.ReadLine());
 
-      if (taskNumber > 0 && taskNumber <= titles.Count)
+      if (taskNumber >= 0 && taskNumber <= titles.Count)
       {
         completedTasks[taskNumber] = true;
         Console.WriteLine("Task marked as completed!");
@@ -84,8 +95,10 @@ while (true)
         Console.WriteLine("Invalid task number.");
       }
       break;
+
+    //List pending tasks
     case 4:
-      if (tasks.Count <= 0)
+      if (titles.Count <= 0)
       {
         Console.WriteLine($"No tasks found!");
       }
@@ -96,13 +109,14 @@ while (true)
         {
           if (!completedTasks[i])
           {
-            Console.WriteLine($"{i}. {tasks[i]} - Description: {descriptions[i]} - Due date: {dueDates[i]}");
+            Console.WriteLine($"{i}. {titles[i]} - Description: {descriptions[i]} - Created at: {createdDates[i]} - Due date: {dueDates[i]:dd/MM/yyyy}");
           }
         }
       }
       break;
+    //List completed tasks
     case 5:
-      if (tasks.Count <= 0)
+      if (titles.Count <= 0)
       {
         Console.WriteLine($"No tasks found!");
       }
@@ -113,28 +127,30 @@ while (true)
         {
           if (completedTasks[i])
           {
-            Console.WriteLine($"{i}. {tasks[i]} - Description: {descriptions[i]} - Due date: {dueDates[i]}");
+            Console.WriteLine($"{i}. {titles[i]} - Description: {descriptions[i]} - Created at: {createdDates[i]} - Due date: {dueDates[i]:dd/MM/yyyy}");
           }
         }
       }
       break;
+
+    //Delete task
     case 6:
-      if (tasks.Count <= 0)
+      if (titles.Count <= 0)
       {
         Console.WriteLine($"No tasks found!");
       }
       else
       {
-        Console.WriteLine($"=======Task list=======");
-        for (int i = 0; i < tasks.Count; i++)
+        Console.WriteLine($"\n=======Task list=======");
+        for (int i = 0; i < titles.Count; i++)
         {
-          Console.WriteLine($"{i}. {tasks[i]} - Description: {descriptions[i]} - Due date: {dueDates[i]} - {(completedTasks[i] ? "[x]" : "[ ]")}");
+          Console.WriteLine($"{i}. {titles[i]} - Description: {descriptions[i]} - Created at: {createdDates[i]} - Due date: {dueDates[i]:dd/MM/yyyy} - {(completedTasks[i] ? "[x]" : "[ ]")}");
         }
       }
-      Console.Write("Enter the task number you want to delete: ");
-      int taskNumber = int.Parse(Console.ReadLine());
+      Console.Write("\nEnter the task number you want to delete: ");
+      taskNumber = int.Parse(Console.ReadLine());
 
-      if (taskNumber > 0 && taskNumber <= titles.Count)
+      if (taskNumber >= 0 && taskNumber <= titles.Count)
       {
         titles.RemoveAt(taskNumber);
         descriptions.RemoveAt(taskNumber);
@@ -147,8 +163,10 @@ while (true)
         Console.WriteLine("Invalid task number.");
       }
       break;
+
+    //Search task
     case 7:
-      Console.Write("Enter the keyword for the search: ");
+      Console.Write("\nEnter the keyword for the search: ");
       string keyword = Console.ReadLine().ToLower();
 
       Console.WriteLine($"\n===== Tasks containing '{keyword}' =====");
@@ -156,13 +174,15 @@ while (true)
       {
         if (titles[i].ToLower().Contains(keyword) || descriptions[i].ToLower().Contains(keyword))
         {
-          Console.WriteLine($"{i}. {tasks[i]} - Description: {descriptions[i]} - Due date: {dueDates[i]} - {(completedTasks[i] ? "[x]" : "[ ]")}");
+          Console.WriteLine($"{i}. {titles[i]} - Description: {descriptions[i]} - Created at: {createdDates[i]} - Due date: {dueDates[i]:dd/MM/yyyy} - {(completedTasks[i] ? "[x]" : "[ ]")}");
         }
       }
       break;
+
+    //Display statistics
     case 8:
-      int completedTasksCount = 0;
-      int pendingTasksCount = 0;
+      completedTasksCount = 0;
+      pendingTasksCount = 0;
 
       for (int i = 0; i < completedTasks.Count; i++)
       {
@@ -180,22 +200,30 @@ while (true)
       Console.WriteLine($"Completed Tasks: {completedTasksCount}");
       Console.WriteLine($"Pending Tasks: {pendingTasksCount}");
 
-      if (dueDates.Count > 0)
+      if (createdDates.Count > 0)
       {
-        DateTime oldestTask = dueDates.Min();
-        DateTime newestTask = dueDates.Max();
+        DateTime oldestTask = createdDates.Min();
+        DateTime newestTask = createdDates.Max();
 
-        Console.WriteLine($"Oldest Task: {oldestTask:yyyy/MM/dd}");
-        Console.WriteLine($"Newest Task: {newestTask:yyyy/MM/dd}");
+        for(int i = 0; i < createdDates.Count; i++){
+          if(createdDates[i] == oldestTask){
+            Console.WriteLine($"Oldest Task: {titles[i]} - Description: {descriptions[i]} - Created at: {createdDates[i]} - Due date: {dueDates[i]:dd/MM/yyyy} - {(completedTasks[i] ? "[x]" : "[ ]")}");
+          }
+          if(createdDates[i] == newestTask){
+            Console.WriteLine($"Newest Task: {titles[i]} - Description: {descriptions[i]} - Created at: {createdDates[i]} - Due date: {dueDates[i]:dd/MM/yyyy} - {(completedTasks[i] ? "[x]" : "[ ]")}");
+          }
+        }
       }
       else
       {
         Console.WriteLine("No tasks available for statistics.");
       }
       break;
+
     case 0:
       Console.WriteLine($"Leaving...");
       return;
+
     default:
       Console.WriteLine($"Invalid option, try again.");
       break;
