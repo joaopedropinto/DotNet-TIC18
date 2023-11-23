@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8Wi4InUD2N+A+ddERZaTHkq38FcF8piSaFq9o789XsH08i6UufsXEAmWCIVBAn9i66oYreWrHQXVUc1x/nRKJg==",
+  "dgSpecHash": "/RFBqRiFN4SL8Pe1W3Qzp0jz0BsDC3FQcbLo11SgW2HMUE75I3UABRu0SYaWdJpZ4DhFd063dpxVivog907Wrg==",
   "success": true,
-  "projectFilePath": "/root/residencia/DotNet-TIC18/Semana1/Aula/Aula.csproj",
+  "projectFilePath": "/home/joao/residencia/DotNet-TIC18/Semana1/Aula/Aula.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

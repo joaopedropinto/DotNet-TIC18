@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Semana1", "Semana1", "{004A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula", "Semana1\Aula\Aula.csproj", "{67867658-524E-48E6-9B38-4429AB8A8052}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Semana2", "Semana2", "{8763CD42-C137-4403-AF18-711E65A791E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net8.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net8.0": []
   },
   "packageFolders": {
     "/home/joao/.nuget/packages/": {}
@@ -13,24 +13,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/joao/residencia/DotNet-TIC18/Semana1/Aula/Aula.csproj",
-      "projectName": "Aula",
-      "projectPath": "/home/joao/residencia/DotNet-TIC18/Semana1/Aula/Aula.csproj",
+      "projectUniqueName": "/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/Exemplo_pessoa_class.csproj",
+      "projectName": "Exemplo_pessoa_class",
+      "projectPath": "/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/Exemplo_pessoa_class.csproj",
       "packagesPath": "/home/joao/.nuget/packages/",
-      "outputPath": "/home/joao/residencia/DotNet-TIC18/Semana1/Aula/obj/",
+      "outputPath": "/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/joao/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -41,8 +41,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/joao/.dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/joao/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,15 @@
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/bin/Debug/net8.0/Exemplo_pessoa_class
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/bin/Debug/net8.0/Exemplo_pessoa_class.deps.json
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/bin/Debug/net8.0/Exemplo_pessoa_class.runtimeconfig.json
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/bin/Debug/net8.0/Exemplo_pessoa_class.dll
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/bin/Debug/net8.0/Exemplo_pessoa_class.pdb
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/obj/Debug/net8.0/Exemplo_pessoa_class.GeneratedMSBuildEditorConfig.editorconfig
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/obj/Debug/net8.0/Exemplo_pessoa_class.AssemblyInfoInputs.cache
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/obj/Debug/net8.0/Exemplo_pessoa_class.AssemblyInfo.cs
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/obj/Debug/net8.0/Exemplo_pessoa_class.csproj.CoreCompileInputs.cache
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/obj/Debug/net8.0/Exemplo_pessoa_class.sourcelink.json
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/obj/Debug/net8.0/Exemplo_pessoa_class.dll
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/obj/Debug/net8.0/refint/Exemplo_pessoa_class.dll
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/obj/Debug/net8.0/Exemplo_pessoa_class.pdb
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/obj/Debug/net8.0/Exemplo_pessoa_class.genruntimeconfig.cache
+/home/joao/residencia/DotNet-TIC18/Semana3/Exemplo_pessoa_class/obj/Debug/net8.0/ref/Exemplo_pessoa_class.dll
