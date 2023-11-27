@@ -1,0 +1,5 @@
+/home/joao/residencia/DotNet-TIC18/Semana3/Atividade3/obj/Debug/net8.0/Atividade3.GeneratedMSBuildEditorConfig.editorconfig
+/home/joao/residencia/DotNet-TIC18/Semana3/Atividade3/obj/Debug/net8.0/Atividade3.AssemblyInfoInputs.cache
+/home/joao/residencia/DotNet-TIC18/Semana3/Atividade3/obj/Debug/net8.0/Atividade3.AssemblyInfo.cs
+/home/joao/residencia/DotNet-TIC18/Semana3/Atividade3/obj/Debug/net8.0/Atividade3.csproj.CoreCompileInputs.cache
+/home/joao/residencia/DotNet-TIC18/Semana3/Atividade3/obj/Debug/net8.0/Atividade3.sourcelink.json
