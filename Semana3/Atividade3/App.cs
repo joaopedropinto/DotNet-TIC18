@@ -114,28 +114,41 @@ public static class App
 
       var product = stock.FirstOrDefault(p => p.id == id);
 
-      if (product == default)
+      if (product == null)
       {
         throw new Exception("Product not found");
       }
+
       Console.WriteLine($"Enter amount to update: ");
       int amount = int.Parse(Console.ReadLine());
 
       TypeTransfer type;
-      Console.WriteLine($"Enter type of moviment (in/out): ");
-      string typeTransferInput = Console.ReadLine();
-      if (typeTransferInput == "in")
+
+      do
       {
-        type = TypeTransfer.in;
-      }
-      else
-      {
-        type = TypeTransfer.out;
-      }
+        Console.Write("Enter type of movement (in/out): ");
+        string typeOfMovementInput = Console.ReadLine();
+
+        if (typeOfMovementInput == "in")
+        {
+          type = TypeTransfer.In;
+        }
+        else if (typeOfMovementInput == "out")
+        {
+          type = TypeTransfer.Out
+        }
+        else
+        {
+          Console.WriteLine("Wrong type of movement. Try again.");
+          type = TypeTransfer.In;
+        }
+
+      } while (type != TypeTransfer.In && type != TypeTransfer.Out);
+
 
       if (type == TypeTransfer.in){
-        stock[stock.FinIndex(p => p.id == id)] = (product.id, product.name, product.amount + amount, product.price);
-        Console.WriteLine($"Stock updated: {product.amount + amount} units.");
+        product.amount += amount;
+        Console.WriteLine($"Stock updated: {product.Amount} units.");
       }
       else
       {
@@ -143,7 +156,7 @@ public static class App
         {
           throw new InvalidOperationException("Insufficient stock");
         }
-        stock[stock.FinIndex(p => p.id == id)] = (product.id, product.name, product.amount - amount, product.price);
+        product.amount -= amount;
         Console.WriteLine($"Stock updated: {product.amount - amount} units.");
       }
     }
