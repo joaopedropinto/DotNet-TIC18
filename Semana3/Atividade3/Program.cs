@@ -3,12 +3,5 @@ using System.Globalization;
 
 CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("pt-BR");
 
-class Program
-{
-  static void Main()
-  {
-    App app = new App();
-    app.Manu();
-  }
-}
-
+App app = new App();
+app.Menu();
