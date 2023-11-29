@@ -8,7 +8,7 @@ public class Pessoa
     Data_Nascimento = data_Nascimento;
   }
   public string Nome { get; private set; }
-  public DateTime Data_Nascimento { get; private set; }
+  public DateTime Data_Nascimento { get; set; }
   private string _cpf;
   public string Cpf
   {

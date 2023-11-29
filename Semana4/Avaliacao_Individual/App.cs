@@ -6,7 +6,20 @@ public class App
   List<Paciente> pacientes = new List<Paciente>();
   public void Main()
   {
-    Console.WriteLine("Hello World!");
+    Medico medico1 = new Medico("Dr. Fulano", "12345678901", new DateTime(2000, 1, 1), "CRM12345");
+    Medico medico2 = new Medico("Dra. Ciclana", "11111111111", new DateTime(1990, 5, 10), "CRM67890");
+
+    Paciente paciente1 = new Paciente("Fulana", "22222222222", new DateTime(1990, 1, 1), "Feminino", "Dor de cabeça");
+    Paciente paciente2 = new Paciente("Beltrano", "33333333333", new DateTime(1980, 3, 15), "Masculino", "Febre");
+
+    medicos.Add(medico1);
+    medicos.Add(medico2);
+    pacientes.Add(paciente1);
+    pacientes.Add(paciente2);
+
+    RelatorioMedicoEntreIdades();
+    RelatorioPacienteEntreIdades();
+    RelatorioPacientePorSexo();
 
   }
 
@@ -19,6 +32,7 @@ public class App
       int idade2 = int.Parse(Console.ReadLine());
       var medicosFiltrados = medicos.Where(p => p.Idade >= idade1 && p.Idade <= idade2).ToList();
 
+      if(medicosFiltrados.Any())
       Console.WriteLine($"Relatório de médicos com idades entre {idade1} e {idade2}");
 
       foreach (var medico in medicosFiltrados)
@@ -64,10 +78,14 @@ public class App
 
       Console.WriteLine($"Relatório de pacientes com sexo {sexoUsuario}:");
 
-      foreach(var paciente in pacientesFiltrados)
+      foreach (var paciente in pacientesFiltrados)
       {
         Console.WriteLine($"Nome: {paciente.Nome} - CPF: {paciente.Cpf} - Sintomas: {paciente.Sintomas}");
       }
+    }
+    catch (Exception ex)
+    {
+      Console.WriteLine($"Error: {ex.Message}");
     }
   }
 }
