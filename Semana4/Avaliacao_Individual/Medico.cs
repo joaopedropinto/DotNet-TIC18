@@ -1,6 +1,6 @@
 namespace Semana4.Avaliacao_Individual;
 
-public class Medico
+public class Medico : Pessoa
 {
   public Medico(string nome, string cpf, DateTime data_Nascimento, string crm)
   {
@@ -9,26 +9,25 @@ public class Medico
     Data_Nascimento = data_Nascimento;
     Crm = crm;
   }
-  public string Nome { get; private set; }
-
-  public DateTime Data_Nascimento { get; private set; }
-  private string _cpf;
-  public string Cpf
+  private string _crm;
+  public string Crm
   {
-    get { return _cpf; }
-
+    get { return _crm; }
     private set
     {
-      if (value.Length != 11)
+      if (crmsCadastrados.Contains(value))
       {
-        throw new Exception("Cpf deve ter 11 digitos");
+        throw new Exception("Crm ja cadastrado");
       }
       else
       {
-
-        _cpf = value;
+        crmsCadastrados.Add(value);
+        _crm = value;
       }
     }
   }
-  public string Crm { get; private set; }
+
+  private static List<string> cpfsCadastrados = new List<string>();
+  private static List<string> crmsCadastrados = new List<string>();
+
 }
