@@ -8,20 +8,26 @@ public class App
   {
     Medico medico1 = new Medico("Dr. Fulano", "12345678901", new DateTime(2000, 1, 1), "CRM12345");
     Medico medico2 = new Medico("Dra. Ciclana", "11111111111", new DateTime(1990, 5, 10), "CRM67890");
+    Medico medico3 = new Medico("Dr. Beltrano", "11122334455", new DateTime(1988, 8, 15), "CRM54321");
 
     Paciente paciente1 = new Paciente("Fulana", "22222222222", new DateTime(1990, 1, 1), "Feminino", "Dor de cabeça, Tosse");
     Paciente paciente2 = new Paciente("Beltrano", "33333333333", new DateTime(1980, 3, 15), "Masculino", "Dor no corpo, Febre, Tosse");
+    Paciente paciente3 = new Paciente("Ciclana", "33344455566", new DateTime(1992, 6, 20), "Feminino", "Gripe");
 
     medicos.Add(medico1);
     medicos.Add(medico2);
+    medicos.Add(medico3);
+
     pacientes.Add(paciente1);
     pacientes.Add(paciente2);
+    pacientes.Add(paciente3);
 
-    // RelatorioMedicoEntreIdades();
-    // RelatorioPacienteEntreIdades();
-    //RelatorioPacientePorSexo();
-    //RelatorioPacienteOrdemAlfabetica();
-    //RelatorioPacientePorSintoma();
+
+    RelatorioMedicoEntreIdades();
+    RelatorioPacienteEntreIdades();
+    RelatorioPacientePorSexo();
+    RelatorioPacienteOrdemAlfabetica();
+    RelatorioPacientePorSintoma();
     RelatorioAniversariantesMes();
 
   }
@@ -30,7 +36,7 @@ public class App
   {
     try
     {
-      Console.WriteLine($"Digite a idade mínima limitante para o relatório: ");
+      Console.WriteLine($"\nDigite a idade mínima limitante para o relatório: ");
       int idade1 = int.Parse(Console.ReadLine());
       Console.WriteLine($"Digite a idade máxima limitante para o relatório: ");
       int idade2 = int.Parse(Console.ReadLine());
@@ -38,7 +44,7 @@ public class App
       var medicosFiltrados = medicos.Where(p => p.Idade >= idade1 && p.Idade <= idade2).ToList();
 
       if (medicosFiltrados.Any())
-        Console.WriteLine($"Relatório de médicos com idades entre {idade1} e {idade2}");
+        Console.WriteLine($"\nRelatório de médicos com idades entre {idade1} e {idade2}\n");
 
       foreach (var medico in medicosFiltrados)
       {
@@ -54,14 +60,14 @@ public class App
   {
     try
     {
-      Console.WriteLine($"Digite a idade mínima limitante para o relatório: ");
+      Console.WriteLine($"\nDigite a idade mínima limitante para o relatório: ");
       int idade1 = int.Parse(Console.ReadLine());
       Console.WriteLine($"Digite a idade máxima limitante para o relatório: ");
       int idade2 = int.Parse(Console.ReadLine());
 
       var pacientesFiltrados = pacientes.Where(p => p.Idade >= idade1 && p.Idade <= idade2).ToList();
 
-      Console.WriteLine($"Relatório de pacientes com idades entre {idade1} e {idade2}:");
+      Console.WriteLine($"\nRelatório de pacientes com idades entre {idade1} e {idade2}:\n");
 
       foreach (var paciente in pacientesFiltrados)
       {
@@ -78,7 +84,7 @@ public class App
   {
     try
     {
-      Console.Write("Informe o sexo para o relatório de pacientes (Masculino/Feminino): ");
+      Console.Write("\nInforme o sexo para o relatório de pacientes (Masculino/Feminino): ");
       string sexoUsuario = Console.ReadLine();
 
       var pacientesFiltrados = pacientes.Where(p => p.Sexo == sexoUsuario).ToList();
@@ -101,7 +107,7 @@ public class App
     try
     {
       var pacientesFiltrados = pacientes.OrderBy(p => p.Nome).ToList();
-      Console.WriteLine("\nPacientes em ordem alfabética:");
+      Console.WriteLine("\n=== Pacientes em ordem alfabética ===\n");
       foreach (var paciente in pacientesFiltrados)
       {
         Console.WriteLine($"Nome: {paciente.Nome} - CPF: {paciente.Cpf} - Idade: {paciente.Idade} - Sintomas: {paciente.Sintomas}");
@@ -122,7 +128,7 @@ public class App
 
       var pacientesFiltrados = pacientes.Where(p => p.Sintomas.Contains(sintomaProcurado)).ToList();
 
-      Console.WriteLine($"\nPacientes cujos sintomas contenham '{sintomaProcurado}':");
+      Console.WriteLine($"\nPacientes cujos sintomas contenham '{sintomaProcurado}': \n");
       foreach (var paciente in pacientesFiltrados)
       {
         Console.WriteLine($"Nome: {paciente.Nome} - CPF: {paciente.Cpf} - Idade: {paciente.Idade} - Sexo: {paciente.Sexo} - Sintomas: {paciente.Sintomas}");
@@ -138,7 +144,7 @@ public class App
   {
     try
     {
-      Console.WriteLine($"=== Relatório de aniversariantes do mês === ");
+      Console.WriteLine($"\n=== Relatório de aniversariantes do mês === \n");
       Console.WriteLine($"Informe o mes desejado: ");
       int mes = int.Parse(Console.ReadLine());
       var medicosAniversariantes = medicos.Where(m => m.Data_Nascimento.Month == mes)
