@@ -2,9 +2,7 @@ namespace Semana4.Avaliacao_Individual;
 
 public class Pessoa
 {
-
   public string Nome { get; private set; }
-
   public DateTime Data_Nascimento { get; private set; }
   private string _cpf;
   public string Cpf
@@ -28,4 +26,8 @@ public class Pessoa
       }
     }
   }
+  
+  public int Idade => DateTime.Now.Year - Data_Nascimento.Year;
+  private static List<string> cpfsCadastrados = new List<string>();
+
 }
