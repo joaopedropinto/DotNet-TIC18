@@ -17,7 +17,7 @@ public class App
       Console.WriteLine($"Digite as idades limitantes para o relatório: ");
       int idade1 = int.Parse(Console.ReadLine());
       int idade2 = int.Parse(Console.ReadLine());
-      var medicosFiltrados = medicos.where(p => p.Idade >= idade1 && p.Idade <= idade2);
+      var medicosFiltrados = medicos.Where(p => p.Idade >= idade1 && p.Idade <= idade2).ToList();
 
       Console.WriteLine($"Relatório de médicos com idades entre {idade1} e {idade2}");
 
@@ -38,18 +38,36 @@ public class App
       Console.WriteLine($"Digite as idades limitantes para o relatório: ");
       int idade1 = int.Parse(Console.ReadLine());
       int idade2 = int.Parse(Console.ReadLine());
-      var pacientesFiltrados = medicos.where(p => p.Idade >= idade1 && p.Idade <= idade2);
+      var pacientesFiltrados = pacientes.Where(p => p.Idade >= idade1 && p.Idade <= idade2).ToList();
 
-      Console.WriteLine($"Relatório de pacientes com idades entre {idade1} e {idade2}");
+      Console.WriteLine($"Relatório de pacientes com idades entre {idade1} e {idade2}:");
 
       foreach (var paciente in pacientesFiltrados)
       {
-        Console.WriteLine($"Nome: {paciente.Nome} - CPF: {paciente.Cpf} - Sintomas: {paciente.Sintomas}");
+        Console.WriteLine($"Nome: {paciente.Nome} - CPF: {paciente.Cpf} - Sexo: {paciente.Sexo} - Sintomas: {paciente.Sintomas}");
       }
     }
     catch (Exception ex)
     {
       Console.WriteLine($"Error: {ex.Message}");
+    }
+  }
+
+  private void RelatorioPacientePorSexo()
+  {
+    try
+    {
+      Console.Write("Informe o sexo para o relatório de pacientes (Masculino/Feminino): ");
+      string sexoUsuario = Console.ReadLine();
+
+      var pacientesFiltrados = pacientes.Where(p => p.Sexo == sexoUsuario).ToList();
+
+      Console.WriteLine($"Relatório de pacientes com sexo {sexoUsuario}:");
+
+      foreach(var paciente in pacientesFiltrados)
+      {
+        Console.WriteLine($"Nome: {paciente.Nome} - CPF: {paciente.Cpf} - Sintomas: {paciente.Sintomas}");
+      }
     }
   }
 }
