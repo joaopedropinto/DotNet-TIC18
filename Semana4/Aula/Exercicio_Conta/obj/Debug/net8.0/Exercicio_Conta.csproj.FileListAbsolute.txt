@@ -1,0 +1,15 @@
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/obj/Debug/net8.0/Exercicio_Conta.GeneratedMSBuildEditorConfig.editorconfig
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/obj/Debug/net8.0/Exercicio_Conta.AssemblyInfoInputs.cache
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/obj/Debug/net8.0/Exercicio_Conta.AssemblyInfo.cs
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/obj/Debug/net8.0/Exercicio_Conta.csproj.CoreCompileInputs.cache
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/obj/Debug/net8.0/Exercicio_Conta.sourcelink.json
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/bin/Debug/net8.0/Exercicio_Conta
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/bin/Debug/net8.0/Exercicio_Conta.deps.json
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/bin/Debug/net8.0/Exercicio_Conta.runtimeconfig.json
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/bin/Debug/net8.0/Exercicio_Conta.dll
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/bin/Debug/net8.0/Exercicio_Conta.pdb
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/obj/Debug/net8.0/Exercicio_Conta.dll
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/obj/Debug/net8.0/refint/Exercicio_Conta.dll
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/obj/Debug/net8.0/Exercicio_Conta.pdb
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/obj/Debug/net8.0/Exercicio_Conta.genruntimeconfig.cache
+/home/joao/residencia/DotNet-TIC18/Semana4/Aula/Exercicio_Conta/obj/Debug/net8.0/ref/Exercicio_Conta.dll
