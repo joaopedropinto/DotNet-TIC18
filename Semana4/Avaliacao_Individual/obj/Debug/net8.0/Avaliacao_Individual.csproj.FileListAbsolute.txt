@@ -1,0 +1,15 @@
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/obj/Debug/net8.0/Avaliacao_Individual.GeneratedMSBuildEditorConfig.editorconfig
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/obj/Debug/net8.0/Avaliacao_Individual.AssemblyInfoInputs.cache
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/obj/Debug/net8.0/Avaliacao_Individual.AssemblyInfo.cs
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/obj/Debug/net8.0/Avaliacao_Individual.csproj.CoreCompileInputs.cache
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/obj/Debug/net8.0/Avaliacao_Individual.sourcelink.json
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/bin/Debug/net8.0/Avaliacao_Individual
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/bin/Debug/net8.0/Avaliacao_Individual.deps.json
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/bin/Debug/net8.0/Avaliacao_Individual.runtimeconfig.json
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/bin/Debug/net8.0/Avaliacao_Individual.dll
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/bin/Debug/net8.0/Avaliacao_Individual.pdb
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/obj/Debug/net8.0/Avaliacao_Individual.dll
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/obj/Debug/net8.0/refint/Avaliacao_Individual.dll
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/obj/Debug/net8.0/Avaliacao_Individual.pdb
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/obj/Debug/net8.0/Avaliacao_Individual.genruntimeconfig.cache
+/home/joao/residencia/DotNet-TIC18/Semana4/Avaliacao_Individual/obj/Debug/net8.0/ref/Avaliacao_Individual.dll
