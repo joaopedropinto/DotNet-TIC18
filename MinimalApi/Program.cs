@@ -1,4 +1,6 @@
+using Middlewares.Class02.Extensions;
 using MinimalApi.Middlewares;
+using MinimalApi.Middlewares.Class02;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
@@ -16,6 +18,10 @@ app.UseHttpsRedirection();
 // app.UsePortasMiddleware();
 // app.UsePinturaMiddleware();
 // app.UseInternoMiddleware();
+app.UseMiddleware<MyExceptionMiddleware>("/errorendpoint");
+//app.UseMyExceptionMiddleware("/errorendpoint");
+app.UseTimerMiddleware();
+app.UseAddHeaderMiddleware();
 
 app.Run(async context =>
 {
