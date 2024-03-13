@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/joao-pedro-pinto/residencia/DotNet-TIC18/ExemplosAula/12.Mar/12.Mar.csproj": {}
+    "/home/joao/residencia/DotNet-TIC18/ExemplosAula/12.Mar/12.Mar.csproj": {}
   },
   "projects": {
-    "/home/joao-pedro-pinto/residencia/DotNet-TIC18/ExemplosAula/12.Mar/12.Mar.csproj": {
+    "/home/joao/residencia/DotNet-TIC18/ExemplosAula/12.Mar/12.Mar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joao-pedro-pinto/residencia/DotNet-TIC18/ExemplosAula/12.Mar/12.Mar.csproj",
+        "projectUniqueName": "/home/joao/residencia/DotNet-TIC18/ExemplosAula/12.Mar/12.Mar.csproj",
         "projectName": "12.Mar",
-        "projectPath": "/home/joao-pedro-pinto/residencia/DotNet-TIC18/ExemplosAula/12.Mar/12.Mar.csproj",
-        "packagesPath": "/home/joao-pedro-pinto/.nuget/packages/",
-        "outputPath": "/home/joao-pedro-pinto/residencia/DotNet-TIC18/ExemplosAula/12.Mar/obj/",
+        "projectPath": "/home/joao/residencia/DotNet-TIC18/ExemplosAula/12.Mar/12.Mar.csproj",
+        "packagesPath": "/home/joao/.nuget/packages/",
+        "outputPath": "/home/joao/residencia/DotNet-TIC18/ExemplosAula/12.Mar/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/joao-pedro-pinto/.nuget/NuGet/NuGet.Config"
+          "/home/joao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.116/RuntimeIdentifierGraph.json"
         }
       }
     }
